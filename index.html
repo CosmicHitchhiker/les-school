@@ -1,0 +1,243 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Школа "Лес"</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("photo_2024-04-01_01-41-17.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#apply" class="w3-bar-item w3-button w3-wide w3-teal">ПОДАТЬ ЗАЯВКУ</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button">О НАС</a>
+      <a href="#departments" class="w3-bar-item w3-button"> ОТДЕЛЕНИЯ</a>
+      <a href="#team" class="w3-bar-item w3-button"> ПРЕПОДАВАТЕЛИ</a>
+      <a href="#place" class="w3-bar-item w3-button"> ГДЕ И КОГДА</a>
+      <a href="#life" class="w3-bar-item w3-button"> ЖИЗНЬ НА ШКОЛЕ</a>
+      <a href="#pricing" class="w3-bar-item w3-button"> СТОИМОСТЬ</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-large" style="display:none;right:0;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">О НАС</a>
+  <a href="#departments" onclick="w3_close()" class="w3-bar-item w3-button"> ОТДЕЛЕНИЯ</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button"> ПРЕПОДАВАТЕЛИ</a>
+  <a href="#place" onclick="w3_close()" class="w3-bar-item w3-button"> ГДЕ И КОГДА</a>
+  <a href="#life" onclick="w3_close()" class="w3-bar-item w3-button"> ЖИЗНЬ НА ШКОЛЕ</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> СТОИМОСТЬ</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white w3-hide-small" style="padding:48px">
+    <span class="w3-jumbo">Многопрофильная школа "Лес"</span><br>
+  </div>
+  <div class="w3-display-left w3-text-white w3-xxlarge w3-hide-large w3-hide-medium w3-center">Многопрофильная школа "Лес"</div><br>
+</header>
+
+<!-- описание -->
+<div class="w3-container" style="padding:64px 16px" id="about">
+  <h3 class="w3-center">ЧТО МЫ ТАКОЕ</h3>
+  <p class="w3-center w3-large">«Лес» — это многопрофильная летняя школа для подростков, которая проводится в формате полевого лагеря.</p>
+  <p class="w3-center w3-large w3-content">Мы отличаемся от других выездных школ: мы создаём среду, в которой школьник сможет сам понять, что ему интересно, и включиться в сообщество единомышленников, которые получают удовольствие от того, чем они занимаются. Мы не готовим к олимпиадам и экзаменам. Мы не натаскиваем на конкретные задачи. Наша сильна сторона [какое-нибудь одно-два слова, чтобы точку поставить, например] в заинтересованности настоящей наукой. </p>
+</div>
+
+<!-- отделения -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="departments">
+  <h3 class="w3-center">«Лес» — это 3 отделения с разными профилями:</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Гуманитарии</p>
+      <p>Гуманитарное отделение набирает школьников заинтересованных филологией, лингвистикой, искусством, антропологией, историей и музыкой.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Физики</p>
+      <p>Физическое отделение расскажет об электронике, астрономии, ядерной физике, волновой оптике, программировании и многом другом, а также научит своих подопечных паять и работать с микросхемами.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Математики</p>
+      <p>Математическое отделении познакомит школьников с разделами “нешкольной” математики: теорий чисел, топологией, анализом, алгоритмами, логикой и поможет разобраться в переплетении этих тем. </p>
+    </div>
+  </div>
+  <p class="w3-center w3-large w3-content">Каждый школьник поступает на конкретное отделение, но это не мешает посещать абсолютно любые курсы которые читаются на школе.</p>
+</div>
+
+<!-- преподы -->
+<div class="w3-container" style="padding:64px 16px" id="team">
+  <h3 class="w3-center">Наши преподаватели - супер.</h3>
+  <p class="w3-center w3-large">Вот некоторые из них:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="photo.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="photo.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="photo.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="photo.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="w3-center w3-large w3-content">Кроме того, на школе есть психологическая служба, которая позаботится о комфорте взрослых и детей на школе, а также расскажет о психологии, коммуникации и проведет интересные групповые занятия и тренинги. </p>
+</div>
+
+<!-- где и когда -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="place">
+  <div class="w3-row-padding">
+    <div class="w3-col l8" style="padding:10px 0px">
+      <h3>ГДЕ И КОГДА</h3>
+      <p class="w3-large">В 2024 году «Лес» пройдет с 7 по 27 августа в Армении, неподалеку от города Гюмри в Ширакской области. Участники школы будут проживать в палаточном лагере в живописном лесу на склоне горы. На территории лагеря есть источник питьевой воды, туалеты, баня, также предоставлен доступ к электричеству и вайфай.</p>
+    </div>
+    <div class="w3-col w3-center l4">
+      <img class="w3-image w3-round-large" src="photo_2024-04-01_13-40-14.jpg" alt="Buildings" style="width:90%">
+    </div>
+  </div>
+</div>
+
+<!-- жизнь на школе -->
+<div class="w3-container" style="padding:64px 16px" id="life">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 w3-center">
+      <img class="w3-image w3-round-large" src="photo_2024-04-01_14-49-58.jpg" alt="Buildings" style="width:90%">
+    </div>
+    <div class="w3-col l8" style="padding:10px 0px">
+      <h3>ЖИЗНЬ НА ШКОЛЕ</h3>
+      <p class="w3-large">В “Лесу” на протяжении всего дня проходят занятия: как научные лекции, так и более прикладные и творческие активности. На школе также будет проводиться практика, в течение которой школьники смогут применить полученные знания. Все занятия проходят в неформальной обстановке, их цель - заинтересовать школьников в той или иной области науки. 
+Школьники сами формируют свое расписание и выбирают, какие курсы посещать. Во внеучебное время у ребят есть возможность поиграть в настольные игры(?), попеть песни у костра и погулять по окрестностям в сопровождении кураторов.
+Кураторы помогают ребенку адаптироваться к условиям жизни на школе, составить индивидуальный учебный план и разобраться с любыми возникающими вопросами. На каждом отделении есть  куратор с психологическим образованием.</p>
+    </div>
+  </div>
+</div>
+
+<!-- стоимость -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="pricing">
+  <h3 class="w3-center">В 2024 году школа будет стоить 180000 армянских драм (примерно 450$).</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-half">
+      <ul class="w3-ul w3-border">
+        <li><h4>В стоимость школы входит</h4></li>
+        <li>Трёхразовое питание</li>
+        <li>Проживание на территории кемпинга</li>
+        <li>Сопровождение при авиаперелете для тех, кто летит из Москвы</li>
+        <li>Трансфер от аэропорта Еревана на место проведения школы</li>
+      </ul>
+    </div>
+    <div class="w3-half">
+      <ul class="w3-ul w3-border">
+        <li><h4>В стоимость школы НЕ входит</h4></li>
+        <li>Авиабилеты</li>
+        <li>Дополнительные экскурсии по достопримечательностям региона</li>
+        <li>Палатка, спальник, пенка <br> (мы просим участников школы брать их с собой, но если такой возможности нету - постараемся помочь с этим)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Заявка -->
+<div class="w3-container w3-teal w3-center" style="padding:64px 16px" id="apply">
+  <h3 class="w3-center">КАК ПОПАСТЬ В "ЛЕС"</h3>
+  <p class="w3-center w3-large w3-content">В 2024 году школа набирает подростков 14-18  лет. Чтобы стать участником школы “Лес” и поехать с нами в Армению, необходимо пройти собеседование. На собеседовании мы оцениваем насколько школьнику будет комфортно на школе и подойдет ли ему наша учебная программа. Чтобы подать заявку на участие в школе, заполните форму по ссылке:</p>
+  <a href="https://forms.gle/FkxwyKbcbNfNUrQG9" class="w3-button w3-black w3-xlarge" target="_blank">ХОЧУ В "ЛЕС"!</a>
+  <p class="w3-center w3-large w3-content">После заполнения формы с вами свяжется координатор набора, который ответит на все вопросы, подробнее расскажет о школе и о том, как проходит отбор. </p><br>
+  <p class="w3-center w3-xlarge w3-content">Если у вас остались вопросы - пишите нам: здесь@почта.лол</p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black" style="padding: 16px;">
+  <p>Всего хорошего и спасибо за рыбу!</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
