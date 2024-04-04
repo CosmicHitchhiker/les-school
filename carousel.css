@@ -43,16 +43,21 @@
 }
 #slider-container #slider .slide {
 	height: 90%;
+/*	min-height: 700px;*/
 	margin: auto 10px;
 /*	background-color: #b5b5b5;*/
 /*	border-radius: 5px;*/
 /*	box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;*/
 	display: grid;
 	place-items: center;
+/*	aspect-ratio: 3 / 2;*/
 }
 #slider-container #slider .slide span {
 	color: white;
 	font-size: 60px;
+}
+.regalii {
+	min-height: 200px;
 }
 @media only screen and (min-width: 1100px) {
 	#slider-container #slider .slide {
