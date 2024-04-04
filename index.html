@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="carousel.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -19,7 +20,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("photo_2024-04-01_01-41-17.jpg");
+  background-image: url("img/photo_2024-04-01_01-41-17.jpg");
   min-height: 100%;
 }
 
@@ -104,46 +105,109 @@ body, html {
 <div class="w3-container" style="padding:64px 16px" id="team">
   <h3 class="w3-center">Наши преподаватели - супер.</h3>
   <p class="w3-center w3-large">Вот некоторые из них:</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="photo.jpg" alt="Vsevolod Lander" style="width:100%">
+  <div id="crsl-container" style="padding:64px 16px">
+  <div id="slider-container">
+    <span onclick="slideRight()" class="btn"></span>
+    <div id="slider">
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
         <div class="w3-container">
           <h3>Всеволод Ландер</h3>
           <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
         </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="photo.jpg" alt="Vsevolod Lander" style="width:100%">
-        <div class="w3-container">
-          <h3>Всеволод Ландер</h3>
-          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="photo.jpg" alt="Vsevolod Lander" style="width:100%">
-        <div class="w3-container">
-          <h3>Всеволод Ландер</h3>
-          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="photo.jpg" alt="Vsevolod Lander" style="width:100%">
-        <div class="w3-container">
-          <h3>Всеволод Ландер</h3>
-          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
-        </div>
-      </div>
-    </div>
+    <span onclick="slideLeft()" class="btn"></span>
   </div>
+</div>
   <p class="w3-center w3-large w3-content">Кроме того, на школе есть психологическая служба, которая позаботится о комфорте взрослых и детей на школе, а также расскажет о психологии, коммуникации и проведет интересные групповые занятия и тренинги. </p>
 </div>
+
+<!-- <div id="crsl-container" class="w3-container" style="padding:64px 16px">
+  <div id="slider-container">
+    <span onclick="slideRight()" class="btn"></span>
+    <div id="slider">
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+      <div class="slide w3-card">
+        <img src="img/preps/Seva.jpg" alt="Vsevolod Lander" style="width:100%">
+        <div class="w3-container">
+          <h3>Всеволод Ландер</h3>
+          <p class="w3-opacity">Астрофизик, популяризатор астрономии</p>
+        </div>
+      </div>
+    </div>
+    <span onclick="slideLeft()" class="btn"></span>
+  </div>
+</div> -->
 
 <!-- где и когда -->
 <div class="w3-container w3-light-grey" style="padding:64px 16px" id="place">
@@ -153,7 +217,7 @@ body, html {
       <p class="w3-large">В 2024 году «Лес» пройдет с 7 по 27 августа в Армении, неподалеку от города Гюмри в Ширакской области. Участники школы будут проживать в палаточном лагере в живописном лесу на склоне горы. На территории лагеря есть источник питьевой воды, туалеты, баня, также предоставлен доступ к электричеству и вайфай.</p>
     </div>
     <div class="w3-col w3-center l4">
-      <img class="w3-image w3-round-large" src="photo_2024-04-01_13-40-14.jpg" alt="Buildings" style="width:90%">
+      <img class="w3-image w3-round-large" src="img/photo_2024-04-01_13-40-14.jpg" alt="Buildings" style="width:90%">
     </div>
   </div>
 </div>
@@ -162,7 +226,7 @@ body, html {
 <div class="w3-container" style="padding:64px 16px" id="life">
   <div class="w3-row-padding">
     <div class="w3-col l4 w3-center">
-      <img class="w3-image w3-round-large" src="photo_2024-04-01_14-49-58.jpg" alt="Buildings" style="width:90%">
+      <img class="w3-image w3-round-large" src="img/photo_2024-04-01_14-49-58.jpg" alt="Buildings" style="width:90%">
     </div>
     <div class="w3-col l8" style="padding:10px 0px">
       <h3>ЖИЗНЬ НА ШКОЛЕ</h3>
@@ -211,16 +275,8 @@ body, html {
   <p>Всего хорошего и спасибо за рыбу!</p>
 </footer>
 
+<script src="carousel.js"></script>
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
