@@ -50,7 +50,7 @@ function setParams(w) {
 	}
 }
 
-setParams();
+checkWidth();
 
 function slideRight() {
 	if (currentPosition != 0) {
