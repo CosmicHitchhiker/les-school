@@ -1,0 +1,23 @@
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question {
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #a0c397;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .answer {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
