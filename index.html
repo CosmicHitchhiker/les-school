@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="carousel.css">
+<link rel="stylesheet" href="accordion.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -54,6 +55,7 @@ body, html {
       <a href="#place" class="w3-bar-item w3-button"> ГДЕ И КОГДА</a>
       <a href="#life" class="w3-bar-item w3-button"> ЖИЗНЬ НА ШКОЛЕ</a>
       <a href="#pricing" class="w3-bar-item w3-button"> СТОИМОСТЬ</a>
+      <a href="#QA" class="w3-bar-item w3-button"> Q&A</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -72,6 +74,7 @@ body, html {
   <a href="#place" onclick="w3_close()" class="w3-bar-item w3-button"> ГДЕ И КОГДА</a>
   <a href="#life" onclick="w3_close()" class="w3-bar-item w3-button"> ЖИЗНЬ НА ШКОЛЕ</a>
   <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> СТОИМОСТЬ</a>
+  <a href="#QA" onclick="w3_close()" class="w3-bar-item w3-button"> Q&A</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -251,6 +254,29 @@ body, html {
   <p class="w3-center w3-large w3-content">После заполнения формы с вами свяжется координатор набора, который ответит на все вопросы, подробнее расскажет о школе и о том, как проходит отбор. </p><br>
   <p class="w3-center w3-xlarge w3-content">Если у вас остались вопросы, их можно задать в нашем <a href="https://t.me/forest_school_am"target="_blank">телеграм канале</a> или написать нам на почту: info@forest-school.am</p>
 </div>
+
+<!-- Вопросы -->
+<div class="w3-container w3-light-grey" style="padding:0 0px" id="QA"></div>
+  <div class="w3-row-padding w3-center" style="margin-top:0px">
+    <h3>Q&A</h3>  
+    <div class="container w3-teal" style="font-size: 20px;color: black;">
+      <div class="question" onclick="toggleQuestion(1)">Question 1</div>
+      <div class="answer" id="answer1">
+        Answer to Question 1
+      </div>
+      <div class="question" onclick="toggleQuestion(2)">Question 2</div>
+      <div class="answer" id="answer2">
+        Answer to Question 2
+      </div>
+      <div class="question" onclick="toggleQuestion(3)">Question 3</div>
+      <div class="answer" id="answer3">
+        Answer to Question 3
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="accordion.js"></script>
 
 <!-- Footer -->
 <footer class="w3-center w3-black" style="padding: 16px;">
