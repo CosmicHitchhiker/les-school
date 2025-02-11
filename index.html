@@ -45,9 +45,8 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#apply" class="w3-bar-item w3-button w3-wide w3-teal">ПОДАТЬ ЗАЯВКУ</a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small w3-hide-medium">
+    <div class="w3-left w3-hide-small w3-hide-medium">
       <a href="#about" class="w3-bar-item w3-button">О НАС</a>
       <a href="#departments" class="w3-bar-item w3-button"> ОТДЕЛЕНИЯ</a>
       <a href="#team" class="w3-bar-item w3-button"> ПРЕПОДАВАТЕЛИ</a>
@@ -57,14 +56,16 @@ body, html {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
+
+    <a href="#apply" class="w3-bar-item w3-button w3-wide w3-teal w3-right">ПОДАТЬ ЗАЯВКУ</a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-large" style="display:none;right:0;" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none;left:0;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">О НАС</a>
   <a href="#departments" onclick="w3_close()" class="w3-bar-item w3-button"> ОТДЕЛЕНИЯ</a>
@@ -91,7 +92,7 @@ body, html {
 
 <!-- отделения -->
 <div class="w3-container w3-light-grey" style="padding:64px 16px" id="departments">
-  <h3 class="w3-center">«Лес» — это 3 отделения с разными профилями:</h3>
+  <h3 class="w3-center">«Лес» — это 4 отделения с разными профилями:</h3>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
