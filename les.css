@@ -1,0 +1,17 @@
+/*colors*/
+.lescolor-main,.lescolor-hover-main:hover{color:#fff!important;background-color:#4d7b57!important}
+.lescolor-add,.lescolor-hover-add:hover{color:#000!important;background-color:#d0e1f3!important}
+.lescolor-accent,.lescolor-hover-accent:hover{color:#fff!important;background-color:#f19501!important}
+.lescolor-human,.lescolor-hover-human:hover{color:#fff!important;background-color:#de3a48!important}
+.lescolor-phys,.lescolor-hover-phys:hover{color:#fff!important;background-color:#243156!important}
+.lescolor-math,.lescolor-hover-math:hover{color:#fff!important;background-color:#32689d!important}
+.lescolor-bio,.lescolor-hover-bio:hover{color:#fff!important;background-color:#22906a!important}
+
+.lescolor-text-main,.lescolor-text-hover-main:hover{color:#4d7b57!important}
+.lescolor-text-add,.lescolor-text-hover-add:hover{color:#d0e1f3!important}
+.lescolor-text-accent,.lescolor-text-hover-accent:hover{color:#f19501!important}
+.lescolor-text-human,.lescolor-text-hover-human:hover{color:#de3a48!important}
+.lescolor-text-phys,.lescolor-text-hover-phys:hover{color:#243156!important}
+.lescolor-text-math,.lescolor-text-hover-math:hover{color:#32689d!important}
+.lescolor-text-bio,.lescolor-text-hover-bio:hover{color:#22906a!important}
+

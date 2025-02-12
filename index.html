@@ -5,11 +5,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
 <link rel="stylesheet" href="carousel.css">
+<link rel="stylesheet" href="les.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+html,body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
 
 body, html {
   height: 100%;
@@ -27,6 +36,15 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+.w3-button:hover {
+  color:#000!important;
+  background-color:#d0e1f3!important;
+}
+
+.w3-border,li{
+  border-color: #32689d!important;
+}
 </style>
 </head>
 
@@ -39,6 +57,8 @@ body, html {
 
   gtag('config', 'G-H3HP8MVH42');
 </script>
+
+<script src="https://kit.fontawesome.com/ede2ab081b.js" crossorigin="anonymous"></script>
 
 <body>
 
@@ -60,7 +80,7 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
 
-    <a href="#apply" class="w3-bar-item w3-button w3-wide w3-teal w3-right">ПОДАТЬ ЗАЯВКУ</a>
+    <a href="#apply" class="w3-bar-item w3-button w3-wide lescolor-main lescolor-hover-accent w3-right">ПОДАТЬ ЗАЯВКУ</a>
   </div>
 </div>
 
@@ -77,10 +97,10 @@ body, html {
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-left w3-text-white w3-hide-small" style="padding:48px;background-color: rgba(0, 102, 102,0.7)">
+  <div class="w3-display-left w3-text-white w3-hide-small" style="padding:48px;background-color: rgba(77, 123, 87, 0.8)">
     <span class="w3-jumbo">Многопрофильная школа "Лес"</span><br>
   </div>
-  <div class="w3-display-left w3-text-white w3-xxlarge w3-hide-large w3-hide-medium w3-center" style="background-color: rgba(0, 102, 102,0.7)">Многопрофильная школа "Лес"</div><br>
+  <div class="w3-display-left w3-text-white w3-xxlarge w3-hide-large w3-hide-medium w3-center" style="background-color: rgba(77, 123, 87, 0.8)">Многопрофильная школа "Лес"</div><br>
 </header>
 
 <!-- описание -->
@@ -91,26 +111,26 @@ body, html {
 </div>
 
 <!-- отделения -->
-<div class="w3-container w3-light-grey" style="padding:64px 16px" id="departments">
+<div class="w3-container lescolor-add" style="padding:64px 16px" id="departments">
   <h3 class="w3-center">«Лес» — это 4 отделения с разными профилями:</h3>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+    <div class="w3-quarter lescolor-human">
+      <i class="fa fa-heart w3-padding w3-jumbo"></i>
       <p class="w3-large">Гуманитарии</p>
       <p>Гуманитарное отделение набирает школьников, заинтересованных филологией, лингвистикой, искусством, антропологией, историей и музыкой.</p>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+    <div class="w3-quarter lescolor-phys">
+      <i class="fa fa-diamond w3-padding w3-jumbo"></i>
       <p class="w3-large">Физики</p>
       <p>Физическое отделение расскажет об электронике, астрономии, ядерной физике, волновой оптике, программировании и многом другом, а также научит своих подопечных паять и работать с микросхемами.</p>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+    <div class="w3-quarter lescolor-math">
+      <i class="fa fa-cog w3-padding w3-jumbo"></i>
       <p class="w3-large">Математики</p>
       <p>Математическое отделении познакомит школьников с разделами “нешкольной” математики: теорий чисел, топологией, анализом, алгоритмами, логикой и поможет разобраться в переплетении этих тем. </p>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-leaf w3-margin-bottom w3-jumbo"></i>
+    <div class="w3-quarter lescolor-bio">
+      <i class="fa fa-leaf w3-padding w3-jumbo"></i>
       <p class="w3-large">Биологи</p>
       <p>Биологическое отделение рассказывает не только о школьных разделах биологии - ботанике, зоологии, анатомии и физиологии человека, но также и о медицине, психологии и современных биотехнологиях. </p>
     </div>
@@ -197,7 +217,7 @@ body, html {
 </div>
 
 <!-- где и когда -->
-<div class="w3-container w3-light-grey" style="padding:64px 16px" id="place">
+<div class="w3-container lescolor-add" style="padding:64px 16px" id="place">
   <div class="w3-row-padding">
     <div class="w3-col l8" style="padding:10px 0px">
       <h3>ГДЕ И КОГДА</h3>
@@ -225,15 +245,17 @@ body, html {
 </div>
 
 <!-- стоимость -->
-<div class="w3-container w3-light-grey" style="padding:64px 16px" id="pricing">
-  <h3 class="w3-center">В 2025 году стоимость школы зависит от времени подачи заявки на участие: </h3>
-  <h5 class="w3-center"><strong>При подаче заявки до 31 марта стоимость участия составляет 270 000 драм</strong></h5>
-  <h5 class="w3-center w3-text-grey">При подаче заявки до 30 апреля стоимость участия составляет 290 000 драм</h5>
-  <h5 class="w3-center w3-text-grey">При подаче заявки до 31 мая стоимость участия составляет 310 000 драм</h5>
-  <h5 class="w3-center w3-text-grey">При подаче заявки после 31 мая стоимость участия составляет 330 000 драм</h5>
+<div class="w3-container lescolor-add" style="padding:64px 16px" id="pricing">
+  <div class="w3-content">
+  <h3 class="w3-center">В 2025 году стоимость участия в школе составляет 350 000 драм (870$). При подаче заявки заранее, можно получить скидку: </h3>
+  <h5 class="w3-center"><strong>При подаче заявки до 31 марта стоимость участия составляет 280 000 драм (715$, скидка 20%)</strong></h5>
+  <h5 class="w3-center lescolor-text-math">При подаче заявки до 30 апреля стоимость участия составляет 300 000 драм (765$, скидка 14%)</h5>
+  <h5 class="w3-center lescolor-text-math">При подаче заявки до 31 мая стоимость участия составляет 320 000 драм (817$, скидка 9%)</h5>
+<!--   <h5 class="w3-center lescolor-text-math">При подаче заявки после 31 мая скидка за раннюю заявку не предоставляется.</h5> -->
+  </div>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-half">
-      <ul class="w3-ul w3-border">
+      <ul class="w3-ul w3-border lescolor-text-phys">
         <li><h4>В стоимость школы входит</h4></li>
         <li>Трёхразовое питание</li>
         <li>Проживание на территории кемпинга</li>
@@ -242,7 +264,7 @@ body, html {
       </ul>
     </div>
     <div class="w3-half">
-      <ul class="w3-ul w3-border">
+      <ul class="w3-ul w3-border lescolor-text-phys">
         <li><h4>В стоимость школы НЕ входит</h4></li>
         <li>Авиабилеты</li>
         <li>Дополнительные экскурсии по достопримечательностям региона</li>
@@ -253,18 +275,32 @@ body, html {
 </div>
 
 <!-- Заявка -->
-<div class="w3-container w3-teal w3-center" style="padding:64px 16px" id="apply">
+<div class="w3-container lescolor-main w3-center" style="padding:64px 16px" id="apply">
   <h3 class="w3-center">КАК ПОПАСТЬ В "ЛЕС"</h3>
   <p class="w3-center w3-large w3-content">В 2025 году школа набирает подростков 14-18 лет. Подать заявку могут школьники из любой страны мира, но учитывайте, что школа проходит на русском языке. Чтобы стать участником школы “Лес” и поехать с нами в Армению, необходимо пройти собеседование. На собеседовании мы оцениваем насколько школьнику будет комфортно на школе и подойдет ли ему наша учебная программа. Чтобы подать заявку на участие в школе, заполните форму по ссылке:</p>
-  <a href="https://forms.gle/USnUEC2esCjEVkj47" class="w3-button w3-black w3-xlarge" target="_blank">ХОЧУ В "ЛЕС"!</a>
+  <a href="https://forms.gle/USnUEC2esCjEVkj47" class="w3-button lescolor-accent w3-xlarge" target="_blank">ХОЧУ В "ЛЕС"!</a>
 <!--   <p class="w3-center w3-xlarge w3-content">Основной этап набора участников закончен, но подать заявку всё ещё можно!</p> -->
   <p class="w3-center w3-large w3-content">После заполнения формы с вами свяжется координатор набора, который ответит на все вопросы, подробнее расскажет о школе и о том, как проходит отбор. </p><br>
   <p class="w3-center w3-xlarge w3-content">Если у вас остались вопросы, их можно задать в нашем <a href="https://t.me/forest_school_am"target="_blank">телеграм канале</a> или написать нам на почту: info@forest-school.am</p>
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black" style="padding: 16px;">
-  <p>Всего хорошего и спасибо за рыбу!</p>
+<footer class="w3-row w3-center lescolor-phys" style="padding: 16px;">
+  <div class="w3-third">
+    <h5 style="font-weight: bold;">ООО "Палаточный лагерь Лес"</h5>
+    <p>г.Гюмри, Армения</p>
+  </div>
+  <div class="w3-third">
+    <p></p>
+  </div>
+  <div class="w3-third">
+    <div class="w3-xxlarge w3-section">
+      <a href="https://www.facebook.com/forest_school_am" target="_blank"><i class="fa-brands fa-facebook lescolor-text-hover-accent"></i></a>
+      <a href="https://www.instagram.com/forest_school_am/" target="_blank"><i class="fa-brands fa-instagram lescolor-text-hover-accent"></i></a>
+      <a href="https://t.me/forest_school_am" target="_blank"><i class="fa-brands fa-telegram lescolor-text-hover-accent"></i></a>
+      <a href="https://vk.com/forest_school_am" target="_blank"><i class="fa-brands fa-vk lescolor-text-hover-accent"></i></a>
+    </div>
+  </div>
 </footer>
 
 <script src="carousel.js"></script>
