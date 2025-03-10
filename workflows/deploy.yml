@@ -1,0 +1,19 @@
+on: 
+  push:
+    branches:
+      master
+  workflow_dispatch:
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: FTP upload
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp.forest-school.am
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
