@@ -2,7 +2,7 @@
 #crsl-container {
 /*	height: 100vh;*/
 	display: grid;
-	place-items: center
+	place-items: center;
 }
 #slider-container {
 /*	height: 300px;*/

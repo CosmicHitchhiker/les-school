@@ -70,6 +70,10 @@
       display: flex;
       flex-wrap: wrap-reverse !important;
     }
+
+    #faq .w3-button {
+      white-space: normal;
+    }
   </style>
 </head>
 
@@ -171,26 +175,71 @@
 <!-- отделения -->
 <div class="w3-container lescolor-add" style="padding:64px 16px" id="departments">
   <h3 class="w3-center">«Лес» — это 4 отделения с разными профилями:</h3>
-  <div class="w3-cell-row w3-center" style="margin-top:64px">
-    <div class="w3-container w3-mobile w3-cell w3-quarter lescolor-human">
+  <div class="w3-row-padding w3-center" style="margin-top:64px;">
+    <div class="w3-container w3-col l3 m12 lescolor-human">
+      <div>
       <i class="fa fa-heart w3-padding w3-jumbo"></i>
       <p class="w3-large">Гуманитарии</p>
       <p>Гуманитарное отделение набирает школьников, заинтересованных филологией, лингвистикой, искусством, антропологией, историей и музыкой. Также отделение проведёт курсы о языках, истории и культуре Армении.</p>
+      <a href="javascript:accordeon('humancourse');">Примеры курсов</a>
+      <br>
+      </div>
+      <ul id="humancourse" class="w3-hide" style="text-align: left">
+        <li>Введение в лингвистику жестовых языков</li>
+        <li>Комиксы как искусство</li>
+        <li>История театра</li>
+        <li>Введение в психотерапию</li>
+        <li>Средневековая архитектура Армении</li>
+        <li>Армянский язык</li>
+        <li>Культура Юго-Восточной Азии</li>
+        <li>Мечтая об Индии: история российского мифа</li>
+      </ul>
     </div>
-    <div class="w3-container w3-mobile w3-cell w3-quarter lescolor-phys">
+    <div class="w3-container w3-col l3 m12 lescolor-phys">
       <i class="fa fa-diamond w3-padding w3-jumbo"></i>
       <p class="w3-large">Физики</p>
       <p>Физическое отделение расскажет об электронике, астрономии, ядерной физике, волновой оптике, программировании и многом другом, а также научит своих подопечных паять и работать с микросхемами.</p>
+      <a href="javascript:accordeon('physcourse');">Примеры курсов</a>
+      <ul id="physcourse" class="w3-hide" style="text-align: left">
+      <li>Программирование на крокодилах</li>
+      <li>Космонавтика</li>
+      <li>Робототехника</li>
+      <li>Астродинамика</li>
+      <li>Радио и телевидение</li>
+      <li>Языки программирования</li>
+      <li>Ядерная физика</li>
+      <li>Физика галактик</li>
+      </ul>
     </div>
-    <div class="w3-container w3-mobile w3-cell w3-quarter lescolor-math">
+    <div class="w3-container w3-col l3 m12 lescolor-math">
       <i class="fa fa-cog w3-padding w3-jumbo"></i>
       <p class="w3-large">Математики</p>
       <p>Математическое отделении познакомит школьников с разделами “нешкольной” математики: теорий чисел, топологией, анализом, алгоритмами, логикой, &mdash; и поможет разобраться в переплетении этих тем. </p>
+      <a href="javascript:accordeon('mathcourse');">Примеры курсов</a>
+      <ul id="mathcourse" class="w3-hide" style="text-align: left">
+      <li>Эллиптические кривые</li>
+      <li>Диофантовы уравнения</li>
+      <li>Комбинаторика</li>
+      <li>Методы доказательств</li>
+      <li>Теорема Абеля</li>
+      <li>Случайные блуждания</li>
+      <li>Наглядная геометрия</li>
+      </ul>
     </div>
-    <div class="w3-container w3-mobile w3-cell w3-quarter lescolor-bio">
+    <div class="w3-container w3-col l3 m12 lescolor-bio">
       <i class="fa fa-leaf w3-padding w3-jumbo"></i>
       <p class="w3-large">Биологи</p>
       <p>Биологическое отделение рассказывает не только о школьных разделах биологии &mdash; ботанике, зоологии, анатомии и физиологии человека &mdash; но также и о медицине, психологии и современных биотехнологиях. </p>
+      <a href="javascript:accordeon('biocourse');">Примеры курсов</a>
+      <ul id="biocourse" class="w3-hide" style="text-align: left">
+      <li>Нейробиология</li>
+      <li>Биолюминесценция</li>
+      <li>Клиническая и общая психология</li>
+      <li>Фармакология</li>
+      <li>Зоологический практикум</li>
+      <li>Классическая генетика</li>
+      <li>Адаптация растений к неблагоприятным условиям</li>
+      </ul>
     </div>
   </div>
   <p class="w3-center w3-large w3-content">Каждый школьник поступает на конкретное отделение, но это не мешает посещать абсолютно любые курсы, которые читаются на школе.</p>
@@ -314,7 +363,7 @@
         <li>Посещение любого количества учебных занятий и участие во внеурочной деятельности</li>
         <li>Тьюторское сопровождение</li>
         <li>Участие в дополнительных активностях: тир, прогулки по горам, посещение армянской фермы</li>
-        <li>Трёхразовое питание</li>
+        <li>Четырёхразовое питание</li>
         <li>Проживание на территории кемпинга</li>
         <li>Сопровождение при авиаперелете для тех, кто летит из Москвы</li>
         <li>Трансфер из аэропортов Еревана или Гюмри на место проведения школы</li>
