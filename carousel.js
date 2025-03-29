@@ -10,6 +10,8 @@ class Carousel {
 		this.slidesCount = this.slides.length - this.slidesPerPage;
 		this.containerWidth = this.container.offsetWidth;
 
+		this.slider.style.width = (this.slides.length * 100) + '%';
+
 		if (container.getAttribute('slides-per-page') == "auto") {
 			window.addEventListener("resize", () => this.checkWidth());
 			this.checkWidth();
@@ -43,7 +45,7 @@ class Carousel {
 		var m = this.slides.length;
 		this.slidesPerPage = n;
 		for (let i = 0; i < m; i++) {
-			this.slides[i].style.width = 'calc(' + (100 / (m - 1) / n) + '% - 20px)';
+			this.slides[i].style.width = 'calc(' + (100 / m / n) + '% - 20px)';
 		}
 		this.slidesCount = m - n;
 		if (this.currentPosition > this.slidesCount) {
