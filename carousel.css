@@ -58,3 +58,20 @@
 .regalii {
 	min-height: 200px;
 }
+
+.review-signature {
+
+}
+.review-signature img {
+	float: left	;
+	mask-image: radial-gradient(circle, black 70%, rgba(255, 255, 255, 0.0) 70.5%);
+	margin-right: 10px;
+}
+.review-signature h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: black;
+}
+.review-signature {
+	color: #696969;
+}
