@@ -1,81 +1,94 @@
-var container = document.getElementById('crsl-container')
-var slider = document.getElementById('slider');
-var slides = document.getElementsByClassName('slide').length;
-var buttons = document.getElementsByClassName('btn');
+class Carousel {
+	constructor(container) {
+		this.container = container;
+		this.slider = container.querySelector('.slider');
+		this.slides = container.getElementsByClassName('slide');
+		this.buttons = container.getElementsByClassName('btn');
+		this.currentPosition = 0;
+		this.currentMargin = 0;
+		this.slidesPerPage = 0;
+		this.slidesCount = this.slides.length - this.slidesPerPage;
+		this.containerWidth = this.container.offsetWidth;
 
-var currentPosition = 0;
-var currentMargin = 0;
-var slidesPerPage = 0;
-var slidesCount = slides - slidesPerPage;
-var containerWidth = container.offsetWidth;
-var prevKeyActive = false;
-var nextKeyActive = true;
+		this.slider.style.width = (this.slides.length * 100) + '%';
 
-window.addEventListener("resize", checkWidth);
-
-function checkWidth() {
-	containerWidth = container.offsetWidth;
-	setParams(containerWidth);
-}
-
-function setParams(w) {
-	if (w < 551) {
-		slidesPerPage = 1;
-	} else {
-		if (w < 901) {
-			slidesPerPage = 2;
+		if (container.getAttribute('slides-per-page') == "auto") {
+			window.addEventListener("resize", () => this.checkWidth());
+			this.checkWidth();
 		} else {
-			if (w < 1101) {
-				slidesPerPage = 3;
-			} else {
-				slidesPerPage = 4;
-			}
+			this.slidesPerPage = parseInt(container.getAttribute('slides-per-page'));
+			this.setSlidesPerPage(this.slidesPerPage);
+		}
+
+		this.buttons[0].addEventListener('click', () => this.slideRight());
+		this.buttons[1].addEventListener('click', () => this.slideLeft());
+	}
+
+	checkWidth() {
+		this.containerWidth = this.container.offsetWidth;
+		this.setParams(this.containerWidth);
+	}
+
+	setParams(w) {
+		if (w < 551) {
+			this.setSlidesPerPage(1);
+		} else if (w < 901) {
+			this.setSlidesPerPage(2);
+		} else if (w < 1101) {
+			this.setSlidesPerPage(3);
+		} else {
+			this.setSlidesPerPage(4);
 		}
 	}
-	// slidesPerPage = Math.floor(w / 350);
-	slidesCount = slides - slidesPerPage;
-	if (currentPosition > slidesCount) {
-		currentPosition -= slidesPerPage;
-	};
-	currentMargin = - currentPosition * (100 / slidesPerPage);
-	slider.style.marginLeft = currentMargin + '%';
-	if (currentPosition > 0) {
-		buttons[0].classList.remove('inactive');
+
+	setSlidesPerPage(n) {
+		var m = this.slides.length;
+		this.slidesPerPage = n;
+		for (let i = 0; i < m; i++) {
+			this.slides[i].style.width = 'calc(' + (100 / m / n) + '% - 20px)';
+		}
+		this.slidesCount = m - n;
+		if (this.currentPosition > this.slidesCount) {
+			this.currentPosition = this.slidesCount;
+		}
+		this.currentMargin = -this.currentPosition * (100 / n);
+		this.slider.style.marginLeft = this.currentMargin + '%';
+		this.updateButtons();
 	}
-	if (currentPosition < slidesCount) {
-		buttons[1].classList.remove('inactive');
+
+	slideRight() {
+		if (this.currentPosition != 0) {
+			this.slider.style.marginLeft = this.currentMargin + (100 / this.slidesPerPage) + '%';
+			this.currentMargin += (100 / this.slidesPerPage);
+			this.currentPosition--;
+		}
+		this.updateButtons();
 	}
-	if (currentPosition >= slidesCount) {
-		buttons[1].classList.add('inactive');
+
+	slideLeft() {
+		if (this.currentPosition != this.slidesCount) {
+			this.slider.style.marginLeft = this.currentMargin - (100 / this.slidesPerPage) + '%';
+			this.currentMargin -= (100 / this.slidesPerPage);
+			this.currentPosition++;
+		}
+		this.updateButtons();
+	}
+
+	updateButtons() {
+		if (this.currentPosition === 0) {
+			this.buttons[0].classList.add('inactive');
+		} else {
+			this.buttons[0].classList.remove('inactive');
+		}
+		if (this.currentPosition >= this.slidesCount) {
+			this.buttons[1].classList.add('inactive');
+		} else {
+			this.buttons[1].classList.remove('inactive');
+		}
 	}
 }
 
-checkWidth();
-
-function slideRight() {
-	if (currentPosition != 0) {
-		slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
-		currentMargin += (100 / slidesPerPage);
-		currentPosition--;
-	};
-	if (currentPosition === 0) {
-		buttons[0].classList.add('inactive');
-	}
-	if (currentPosition < slidesCount) {
-		buttons[1].classList.remove('inactive');
-	}
-};
-
-function slideLeft() {
-	if (currentPosition != slidesCount) {
-		slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
-		currentMargin -= (100 / slidesPerPage);
-		currentPosition++;
-	};
-	if (currentPosition == slidesCount) {
-		buttons[1].classList.add('inactive');
-	}
-	if (currentPosition > 0) {
-		buttons[0].classList.remove('inactive');
-	}
-};
+// Initialize carousels
+document.querySelectorAll('.crsl-container').forEach(container => {
+	new Carousel(container);
+});
